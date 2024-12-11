@@ -1,0 +1,263 @@
+/*css style sheet*/
+
+:root {
+   --accent-color: #91006c;
+   --accent-dark-color: #fa3fcb;
+   --font-color: #595959;
+   --bg-color: #CAEBF2;
+}
+
+body {
+   background-color: black;
+   font-family: Helvetica, sans-serif;
+   color: var(--font-color);
+}
+
+main {
+   background-color: var(--bg-color);
+   margin: 0;
+   padding: 5px 10px;
+}
+
+a:link {
+   color: var(--font-color);
+}  
+
+a:visited {
+   color: var(--font-color);  
+}  
+
+a:hover {
+   color: var(--accent-color);
+}  
+
+a:active {
+   color: var(--accent-color);
+}  
+
+header {
+   background-color: rgb(241, 201, 221);
+   padding: 5px 0;
+   margin: 0;
+   position: relative; /* Add this to position the Feel Good Quotes button */
+}
+
+header h1 {
+   color: var(--accent-color);
+   font-size: 3rem;
+   margin: 10px 10px;
+   text-shadow: 2px 2px 3px gray;
+}
+main {
+   background-color: black;
+}
+
+nav ul {
+   list-style-type: none;
+   padding: 10px 0;
+}
+
+nav li {
+   display: inline;
+}
+
+nav li a {
+   text-decoration: none;  
+   padding: 10px 20px;
+}
+
+nav li a:hover {
+   color: white;
+   background-color: var(--accent-color);    
+}
+
+.feature {
+   border-radius: 10px;
+   background: white;
+   padding: 2px 15px;
+   margin: 10px 0;
+}
+
+.feature a {
+   text-decoration: none;  
+}
+
+.candle-photo {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 2px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.context {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.title {
+    text-align: center;
+    font-size: 5rem;
+    margin: 10px 0;
+}
+.sub-page {
+    text-align: left;
+    font-size: 3rem;
+    margin: 10px 0;
+}
+.shop-candle {
+    text-align: center;
+    font-size: 1rem;
+    margin: 3px 0; /* Smaller margins for better layout */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.about {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 50px 0;
+}
+
+.carousel-container {
+   width: 80%;
+   margin: 0 auto;
+   position: relative;
+}
+
+.carousel {
+   list-style-type: none;
+   width: 100%;
+   height: 600px;
+   position: relative;
+}
+
+.carousel-item {
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.carousel-item > img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   object-position: 100px 50px;
+   padding: 2px 15px;
+   margin: 0px 150px;
+}
+
+.carousel-item.active {
+   opacity: 1;
+}
+
+.carousel-btn {
+   background: whitesmoke;
+   border: gray;
+   font-size: 1.2rem;
+   font-weight: 900;
+   color: rgb(241, 201, 221);
+   position: absolute;
+   top: 50%;
+   width: 2rem;
+   height: 2rem;
+   border-radius: 50%;
+}
+
+.carousel-btn.left {
+   left: -2.5rem;
+}
+
+.carousel-btn.right {
+   right: -2.5rem;
+}
+
+.carousel-btn:hover {
+   cursor: pointer;
+   background-color: rgb(241, 201, 221);
+   color: white;
+}
+
+.carousel-nav {
+   display: flex;
+   justify-content: center;
+   margin-top: 0.7rem;
+   gap: 0.5rem;
+   opacity: 0.3;
+}
+
+.nav-item {
+   height: 11px;
+   width: 11px;
+   background-color: whitesmoke;
+   border-radius: 50%;
+   opacity: 0.3;
+}
+
+.nav-item.active {
+   opacity: 0.7;
+}
+
+.modal {
+   display: none;
+   padding: 2px 1px;
+   background-color: rgb(241, 201, 221);
+   color: white;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 50%;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+   z-index: 1000;
+}
+
+.mainContent {
+   position: static;
+   background-color: #fefefe;
+   margin: auto;
+   padding: 0;
+   border: 2px black;
+   width: 50%;
+}
+
+#searchBar {
+   padding: 8px;
+   margin: 10px;
+   width: 200px;
+}
+
+header button {
+   padding: 8px;
+   background-color: var(--accent-color);
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+header button:hover {
+   background-color: var(--accent-dark-color);
+}
+
+#feelGoodQuotesButton {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   padding: 10px 15px;
+   background-color: var(--accent-color);
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#feelGoodQuotesButton:hover {
+   background-color: var(--accent-dark-color);
+}

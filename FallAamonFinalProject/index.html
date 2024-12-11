@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Love Bomb</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="script.js" defer></script>
+   </head>
+   <body>
+      <header>
+         <h1 class="title">Love Bomb</h1><!-- creted a class so i could make the lading page title different -->
+         <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Limited _Edition.html">Limited Edition</a></li>
+                <li><a href="Popular_Candles.html">Popular</a></li><!-- links to all pages -->
+                <li><a href="All_Candles.html">All</a></li>
+                <li><a href="About_us.html">About Us</a></li>
+            </ul>
+         </nav>
+         <input type="text" id="searchBar" placeholder="Search...">
+      <button onclick="searchPages()">Search</button>
+      <button id="feelGoodQuotesButton">Feel Good Quotes</button>
+
+      </header>
+      <main>
+         <div class="carousel-container">
+            <button class="carousel-btn left"> <i class="fa-solid fa-chevron-left"></i>  </button>
+            <ul class="carousel">
+    
+                <li class="carousel-item active"><img src="angel.webp" alt="angel"></li>
+                <li class="carousel-item"><img src="mosque.webp" alt="mosque"></li>
+                <li class="carousel-item"><img src="medussa.webp" alt="medussa"></li>
+                <li class="carousel-item"><img src="bear.webp" alt="bear"></li>
+       
+            </ul>
+            <button class="carousel-btn right"> <i class="fa-solid fa-chevron-right"></i>   </button>
+    
+            <div class="carousel-nav">
+    
+                <div class="nav-item active"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+    
+            </div>
+        </div>
+        <button id="modalButton">Subscribe to our newsletter</button>
+         <div id="modal" class="modal">
+   <div class="content">
+      <span class="close">&times;</span>
+      <h2>Subscribe to our newsletter</h2>
+      <p>Subscribe to our newsletter to get the latest updates on our products</p>
+      <form action="" method="POST">
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+         <button type="submit">Subscribe</button>
+      </form>
+   </div>
+</div>
+
+               
+            
+          
+      </main>
+      <footer>
+         <p>&copy;2024 Fall</p>
+         <a href="https://validator.w3.org">Validate HTML</a> <br>
+            <a href="https://jigsaw.w3.org/css-validator">Validate CSS</a>
+      </footer>
+   </body>
+</html>
